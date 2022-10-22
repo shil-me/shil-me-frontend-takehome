@@ -12,10 +12,10 @@
 The project consists of three tasks ranging at three different difficulty levels.
 
 ### Task 1: Programmatic component creation [INTERMEDIATE]
-!sudo make ui
+⚡️ !sudo make ui
 
 **Task**
-⚡️ Make a component which takes in a `config` and builds a UI based on that config.
+Make a component which takes in a `config` and builds a UI based on that config.
 
 **Flow**
 1. App.js takes a configuration as props such as:
