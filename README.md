@@ -15,7 +15,7 @@ The project consists of three tasks ranging at three different difficulty levels
 !sudo make ui
 
 **Task**
-Make a component which takes in a `config` and builds a UI based on that config.
+⚡️ Make a component which takes in a `config` and builds a UI based on that config.
 
 **Flow**
 1. App.js takes a configuration as props such as:
@@ -58,7 +58,7 @@ Make a component which takes in a `config` and builds a UI based on that config.
 Please implement the folders `/build` and files `Task1.js` and `task-1.js`.
 
 ### Task 2: Resizing animation [EASY]
-Bruce Banner -> Hulk
+⚡️ Bruce Banner -> Hulk
 
 **Task**
 Animate a grid item from arbitrary size to arbitrary size on click.
@@ -67,7 +67,7 @@ Animate a grid item from arbitrary size to arbitrary size on click.
 Please implement the files `Task2.js` and `task-2.js`.
 
 ### Task 3: Horizontal draggable masonry grid [HARD]
-Let's see if you can make Windows 8, Windows GREAT!
+⚡️ Let's see if you can make Windows 8, Windows GREAT!
 
 **Task**
 Design a draggable horizontal scroll in the shape of a masonry grid with items of fixed width and variable height.
