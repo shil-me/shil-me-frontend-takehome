@@ -1,14 +1,14 @@
-# Shil.me Frontent Engineer Take-home Project (2022)
+# Shil.me Front-end Engineer Take-home Project (2022)
 
 👋 Hey there! Congrats for making it this far, that means we really liked you and thought you would make a great addition for our amazing team. This project is designed to see if your frontend abilities are complementary to ours, by putting you through three tasks similar to what you will face day to day at Shil.me.
 
-## What We're Looking For
+## What We're Looking For
 
 - Independence / Autonomy: We value all of our team members taking initiative and working with minimal management and deadlines.
 - Resourcefulness: When faced with a problem, we want to see your process in solving it, even if you don't end up being able to solve it.
-- Obsession: Everyone in the Shil.me Team is striving for perfection. There's a way to finish all of these tasks in a minimal way, and a way to ~finish~ these tasks in a way that's over and beyond. We wanna see that special something.
+- Obsession: Everyone in the Shil.me Team is striving for perfection. There's a way to finish all of these tasks in a minimal way, and a way to ✨finish✨ these tasks in a way that's over and beyond. We wanna see that special something.
 
-## Tasks
+## Tasks
 The project consists of three tasks ranging of three differet difficulty levels.
 
 ## Getting Started
