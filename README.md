@@ -9,7 +9,52 @@
 - **Obsession:** Everyone in the Shil.me Team is striving for perfection. There's a way to finish all of these tasks in a minimal way, and a way to ✨finish✨ these tasks in a way that's over and beyond. We wanna see that special something.
 
 ## Tasks
-The project consists of three tasks ranging of three differet difficulty levels.
+The project consists of three tasks ranging at three different difficulty levels.
+
+### Task 1: Programmatic component creation [INTERMEDIATE]
+!sudo make ui
+
+**Task**
+Make a component which takes in a `config` and builds a UI based on that config.
+
+**Flow**
+1. App.js takes a configuration as props such as:
+
+```
+{
+      title: "Mint NFT",
+      description: "Select how many NFTs from the collection you’d like to mint.",
+      style: {
+         backgroundColor: '#F2F2F2',
+         color: 'black'
+      },
+      components: [
+         {
+            type: "input-number",
+            placeholder: 42,
+            title: "Number of NFTs",
+            description: null
+         },
+         {
+            type: 'button',
+            title: 'Mint!',
+            style: {
+               backgroundColor: 'green',
+               color: 'white'
+            },
+            callback: () => {
+               console.log("button from Builder2 pressed!")
+            }
+         }
+      ]
+   }
+```
+
+
+
+App.js creates a Builder component and passes in the configuration.
+The Builder component goes through the config and build the element using components from /builder-components.
+Builder component keeps a state of the values of all the sub-components
 
 ## Getting Started
 
