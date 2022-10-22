@@ -21,7 +21,7 @@ Make a component which takes in a `config` and builds a UI based on that config.
 1. App.js takes a configuration as props such as:
 
 ```
-{
+   {
       title: "Mint NFT",
       description: "Select how many NFTs from the collection you’d like to mint.",
       style: {
@@ -50,41 +50,35 @@ Make a component which takes in a `config` and builds a UI based on that config.
    }
 ```
 
+2. App.js creates a Builder component and passes in the configuration.
+3. The Builder component goes through the config and build the element using components from /builder-components.
+4. Builder component keeps a state of the values of all the sub-components
 
+**Implementation**
+Please implement the folders `/build` and files `Task1.js` and `task-1.js`.
 
-App.js creates a Builder component and passes in the configuration.
-The Builder component goes through the config and build the element using components from /builder-components.
-Builder component keeps a state of the values of all the sub-components
+### Task 2: Resizing animation [EASY]
+Bruce Banner -> Hulk
 
-## Getting Started
+**Task**
+Animate a grid item from arbitrary size to arbitrary size on click.
 
-First, run the development server:
+**Implementation**
+Please implement the files `Task2.js` and `task-2.js`.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+### Task 3: Horizontal draggable masonry grid [HARD]
+Let's see if you can make Windows 8, Windows GREAT!
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Task**
+Design a draggable horizontal scroll in the shape of a masonry grid with items of fixed width and variable height.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+**Requirements**
+- Panel on the left with button for adding new items.
+- Items draggable in the grid.
+- Items react to hover and drag (up to you)
+- Page title on top of grid (static, hard-coded)
+- Side panel sticky and fixed
+- Grid horizontal scrollable
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+**Implementation**
+Please implement the folders `/grid` and files `Task3.js` and `task-3.js`.
