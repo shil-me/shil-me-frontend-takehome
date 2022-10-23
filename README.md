@@ -15,10 +15,10 @@ The project consists of three tasks ranging at three different difficulty levels
 ⚡️ !sudo make ui
 
 **Task**
-Make a component which takes in a `config` and builds a UI based on that config.
+Make a general component which takes in a `config` and builds a UI based on that config. The idea here is we want to create a component that can be used for various scenarios/configurations. In the example config below, we are creating a UI for a user to mint NFTs. Given this config, the component should be able to account for different titles, descriptions, styles, sub-components, etc.
 
 **Flow**
-1. App.js takes a configuration as props such as:
+1. Task1.js takes a configuration as props such as:
 
 ```
    {
@@ -50,12 +50,12 @@ Make a component which takes in a `config` and builds a UI based on that config.
    }
 ```
 
-2. App.js creates a Builder component and passes in the configuration.
+2. Task1.js creates a Builder component and passes in the configuration.
 3. The Builder component goes through the config and build the element using components from /builder-components.
 4. Builder component keeps a state of the values of all the sub-components
 
 **Implementation**
-Please implement the folders `/build` and files `Task1.js` and `task-1.js`.
+Please implement the folders `/builder` and files `Task1.js` and `task-1.js`.
 
 ### Task 2: Resizing animation [EASY]
 ⚡️ Bruce Banner -> Hulk
@@ -70,7 +70,7 @@ Please implement the files `Task2.js` and `task-2.js`.
 ⚡️ Let's see if you can make Windows 8, Windows GREAT!
 
 **Task**
-Design a draggable horizontal scroll in the shape of a masonry grid with items of fixed width and variable height.
+Design a draggable horizontally scrolling masonry grid similar to the Windows 8 Menu, with items of fixed width and variable height. Here, we'd like to createa masonry grid with items that are re-arrangeable via drag and drop.
 
 **Requirements**
 - Panel on the left with button for adding new items.
