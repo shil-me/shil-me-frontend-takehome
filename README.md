@@ -9,7 +9,7 @@
 - **Obsession:** Everyone in the Shil.me Team is striving for perfection. There's a way to finish all of these tasks in a minimal way, and a way to ✨finish✨ these tasks in a way that's over and beyond. We wanna see that special something.
 
 ## Tasks
-The project consists of three tasks ranging at three different difficulty levels.
+The project consists of three tasks at two different difficulty levels.
 
 ### Task 1: Programmatic component creation [INTERMEDIATE]
 ⚡️ !sudo make ui
@@ -57,28 +57,46 @@ Make a general component which takes in a `config` and builds a UI based on that
 **Implementation**
 Please implement the folders `/builder` and files `Task1.js` and `task-1.js`.
 
-### Task 2: Resizing animation [EASY]
-⚡️ Bruce Banner -> Hulk
+### Task 2: Animated carousel [INTERMEDIATE]
+⚡️ Rock'n'scroll
 
 **Task**
-Animate a grid item from arbitrary size to arbitrary size on click.
+Make an animated, full page carousel with pages of different widths that can be used to scroll to different pages using > and < buttons.
 
 **Implementation**
-Please implement the files `Task2.js` and `task-2.js`.
+Please implement the folders `/carousel` and files `Task2.js` and `task-2.js`.
 
 ### Task 3: Horizontal draggable masonry grid [HARD]
 ⚡️ Let's see if you can make Windows 8, Windows GREAT!
 
 **Task**
-Design a draggable horizontally scrolling masonry grid similar to the Windows 8 Menu, with items of fixed width and variable height. Here, we'd like to createa masonry grid with items that are re-arrangeable via drag and drop.
+Modify the package (`react-grid-layout`)[https://github.com/react-grid-layout/react-grid-layout] to make it horizontally expanding rather than vertically expanding. What we mean by that is that the current implementation of the package takes in a number of columns from the user, and when a new item is added, this item expands the grid vertically. For our purposes, we want to do the opposite: we want to set a number of rows which expands horizontally when an item is added. Please refer to the Figma file for a demonstration of this behaviour.
 
 **Requirements**
-- Panel on the left with button for adding new items.
-- Items draggable in the grid.
-- Items react to hover and drag (up to you)
-- Page title on top of grid (static, hard-coded)
-- Side panel sticky and fixed
-- Grid horizontal scrollable
+- Fork the repository for the package at `https://github.com/react-grid-layout/react-grid-layout`.
+- Make the necessary modifications.
+- Install your repo as a package in (https://codesandbox.io/s/5wy3rz5z1x?module=%2Fsrc%2FShowcaseLayout.js)[this Sandbox].
+- Change `import { Responsive, WidthProvider } from "react-grid-layout"` to `import { Responsive, WidthProvider } from <YOUR PACKAGE>`.
+- Change 
+```
+ShowcaseLayout.defaultProps = {
+  className: "layout",
+  rowHeight: 30,
+  onLayoutChange: function() {},
+  cols: { lg: 12, md: 10, sm: 6, xs: 4, xxs: 2 },
+  initialLayout: generateLayout()
+};
+```
+to
+```
+ShowcaseLayout.defaultProps = {
+  className: "layout",
+  columnWidth: 30, // changed
+  onLayoutChange: function() {},
+  rows: { lg: 12, md: 10, sm: 6, xs: 4, xxs: 2 }, // changed
+  initialLayout: generateLayout()
+};
+```
 
-**Implementation**
-Please implement the folders `/grid` and files `Task3.js` and `task-3.js`.
+**Hint**
+`react-grid-layout` already has a horizontal compaction mode. The only thing that needs to be implemented is fixing the row count instead of the column count.

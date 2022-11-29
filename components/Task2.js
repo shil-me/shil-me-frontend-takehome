@@ -1,31 +1,24 @@
 export default function Task2(props) {
 
-   const ANIMATION_DETAILS = {
-      size: { // in pixels [w, h]
-         start: [50, 50],
-         end: [200, 400]
-      },
-      duration: '1' // in seconds
+   const PAGE_PROPERTIES = {
+      pages: [ // widths of all pages
+         {
+            width: "1000px"
+         },
+         {
+            width: "2000px"
+         },
+         {
+            width: "6000px"
+         }
+      ]
    }
 
-   // TO-DO: This is where you can write the
-   // mechanics for when a user clicks on the
-   // resizable box.
-   const callback = (e) => {
-      ...
-}
-
-return <div style={{
-   display: 'flex',
-   flexDirection: 'row'
-}}>
-   <div id="resize-box-1" style={{
-      backgroundColor: 'gray',
-      padding: '8px'
-   }} onClick={(e) => { callback(e) }}></div>
-   <div id="resize-box-2" style={{
-      backgroundColor: 'gray',
-      padding: '8px'
-   }} onClick={(e) => { callback(e) }}></div>
-</div>
+   return <div style={{
+      display: 'flex',
+      flexDirection: 'column'
+   }}>
+      <CarouselController {...} /> // TO-DO: Pass in whatever states you need here
+      <Carousel pages={PAGE_PROPERTIES.pages} {...} /> // TO-DO: Pass in whatever states you need here
+   </div>
 }
