@@ -2,6 +2,8 @@
 
 👋 Hey there! Congrats for making it this far, that means we really liked you and thought you would make a great addition for our amazing team. This project is designed to see if your frontend abilities are complementary to ours, by putting you through three tasks similar to what you will face day to day at Shil.me.
 
+Please review a Figma mock-up of these tasks [here](https://www.figma.com/file/nBiQUgiGWgk4liKIR8lPDj/Untitled?node-id=0%3A1&t=MUo39K9qFGSXyAxn-0).
+
 ## What We're Looking For
 
 - **Independence / Autonomy:** We value all of our team members taking initiative and working with minimal management and deadlines.
@@ -70,12 +72,12 @@ Please implement the folders `/carousel` and files `Task2.js` and `task-2.js`.
 ⚡️ Let's see if you can make Windows 8, Windows GREAT!
 
 **Task**
-Modify the package (`react-grid-layout`)[https://github.com/react-grid-layout/react-grid-layout] to make it horizontally expanding rather than vertically expanding. What we mean by that is that the current implementation of the package takes in a number of columns from the user, and when a new item is added, this item expands the grid vertically. For our purposes, we want to do the opposite: we want to set a number of rows which expands horizontally when an item is added. Please refer to the Figma file for a demonstration of this behaviour.
+Modify the package [`react-grid-layout`](https://github.com/react-grid-layout/react-grid-layout) to make it horizontally expanding rather than vertically expanding. What we mean by that is that the current implementation of the package takes in a number of columns from the user, and when a new item is added, this item expands the grid vertically. For our purposes, we want to do the opposite: we want to set a number of rows which expands horizontally when an item is added. Please refer to the Figma file for a demonstration of this behaviour.
 
 **Requirements**
 - Fork the repository for the package at `https://github.com/react-grid-layout/react-grid-layout`.
 - Make the necessary modifications.
-- Install your repo as a package in (https://codesandbox.io/s/5wy3rz5z1x?module=%2Fsrc%2FShowcaseLayout.js)[this Sandbox].
+- Install your repo as a package in [this Sandbox](https://codesandbox.io/s/5wy3rz5z1x?module=%2Fsrc%2FShowcaseLayout.js).
 - Change `import { Responsive, WidthProvider } from "react-grid-layout"` to `import { Responsive, WidthProvider } from <YOUR PACKAGE>`.
 - Change 
 ```
